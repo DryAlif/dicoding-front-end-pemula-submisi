@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>Bookshelf C.R.U.D Apps</title>
+  </head>
+  <body>
+    <header class="header-app">
+      <h1 class="header-app__text">BOOKSHELF C.R.U.D APP</h1>
+    </header>
+
+    <main>
+      <section class="project-input">
+        <article id="input-section" class="input-section">
+          <form id="form" class="form">
+            <div class="form__title">Masukkan Buku Baru</div>
+            <hr class="hr-line" />
+            <div class="form__item">
+              <label class="form__label" for="inputBookTitle">Judul</label>
+              <input
+                id="inputBookTitle"
+                data-validation="Judul Buku"
+                type="text"
+                class="form__input"
+                placeholder="Ketik Judul Buku"
+              />
+              <span class="form__error"></span>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="inputBookAuthor">Penulis</label>
+              <input
+                id="inputBookAuthor"
+                data-validation="Penulis Buku"
+                type="text"
+                class="form__input"
+                placeholder="Ketik Nama Pengarang Buku"
+              />
+              <span class="form__error"></span>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="inputBookYear">Tahun</label>
+              <input
+                id="inputBookYear"
+                data-validation="Tahun Terbit Buku"
+                type="number"
+                class="form__input"
+                placeholder="Ketik Tahun terbit"
+              />
+              <span class="form__error"></span>
+            </div>
+            <div class="form__item--inline">
+              <label class="form__label" for="inputBookIsComplete"
+                >Selesai dibaca</label
+              >
+              <input
+                id="inputBookIsComplete"
+                name="inputBookIsComplete"
+                type="checkbox"
+                class="checkbox__input"
+              />
+            </div>
+            <div class="form__item">
+              <button id="bookSubmit" class="form__btn" type="submit">
+                Masukkan Buku ke rak <span>Belum selesai dibaca</span>
+              </button>
+            </div>
+          </form>
+        </article>
+      </section>
+      <section class="project-search">
+        <article id="input-search-section" class="input-search-section">
+          <div class="form__title">Cari Buku Sesuai Judul otomatis</div>
+
+          <form id="form-search" class="form-search">
+            <div class="form__item">
+              <!-- <label class="form__label" for="inputBookTitle">Judul</label> -->
+              <input
+                id="searchBookTitle"
+                data-validation="Judul Buku"
+                type="text"
+                class="form__input"
+                placeholder="Ketik Judul Buku"
+              />
+              <span class="form__error"></span>
+            </div>
+          </form>
+        </article>
+      </section>
+      <section class="project-list">
+        <article id="RakBelumSelesaiBaca">
+          <header>
+            <h2>Active | Belum selesai dibaca</h2>
+          </header>
+          <ul></ul>
+        </article>
+
+        <article id="RakSelesaiBaca">
+          <header>
+            <h2>Finished | Selesai dibaca</h2>
+          </header>
+          <ul></ul>
+        </article>
+      </section>
+      <section class="confirm_dialog"></section>
+      <section class="edit-dialog"></section>
+    </main>
+
+   
+    <script src="js/confirm.js" defer type="text/javascript"></script>
+    <script src="js/formValidation.js" defer type="text/javascript"></script>
+    <script src="js/data.js" defer type="text/javascript"></script>
+    <script src="js/dom.js" defer type="text/javascript"></script>
+    <script src="js/script.js" defer type="text/javascript"></script>
+  </body>
+</html>

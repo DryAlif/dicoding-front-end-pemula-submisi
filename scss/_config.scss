@@ -1,0 +1,65 @@
+:root {
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+
+  --gray-color: #dddddd;
+
+  --light-gray-color: #f9f3f3;
+  --pink-color: #f25287;
+  --light-pink-color: #f7d9d9;
+
+  --orange-color: #ffbc00;
+  --dark-orange-color: #ff9200;
+  --dark-color: #333;
+  --black-color: #000;
+  --white-color: #fff;
+  --white-smoke-color: #f5f5f5;
+}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background: var(--light-gray-color);
+}
+
+main {
+  max-width: 120rem;
+
+  margin: 0 auto;
+  padding: 1.8rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 0.1rem;
+  border: 0.6rem solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}

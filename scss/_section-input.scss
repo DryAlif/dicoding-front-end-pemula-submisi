@@ -1,0 +1,146 @@
+.project-input {
+  max-width: 500px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.1rem;
+}
+
+.header-app {
+  width: 100%;
+  height: 6.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--dark-color);
+}
+
+.header-app__text {
+  color: var(--dark-orange-color);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 1.4rem;
+  text-align: center;
+
+  .hr-line {
+    border: none;
+    height: 0.2rem;
+    background: #ddd;
+    margin-bottom: 0.1rem;
+  }
+
+  .form {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  .form__title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .form__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__item > * {
+    align-self: flex-start;
+  }
+
+  .form__item--inline {
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+  }
+
+  .form__item--inline > label {
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+
+  .form__label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.8rem 0;
+  }
+
+  .form__input {
+    -webkit-appearance: none;
+
+    width: 100%;
+    max-width: 50.5rem;
+    padding: 0.8rem;
+    margin-bottom: 0.1rem;
+    font-size: 1.5rem;
+    outline: none;
+    border: 0.2rem solid #ddd;
+    border-radius: 5px;
+    background: var(--white-smoke-color);
+    transition: background 0.25s, border-color 0.25s, color 0.25s;
+  }
+
+  .form__input:focus {
+    background: var(--white-color);
+  }
+
+  .form__input::placeholder {
+    color: var(--color-grey-dark-2);
+  }
+
+  .form__input--error {
+    color: #d50000;
+    background: #fff8f8;
+    border-color: #d50000;
+  }
+
+  .form__input--error::placeholder {
+    color: #ffbfbf;
+  }
+
+  .form__error {
+    padding-top: 0.5rem;
+    color: #d50000;
+    font-size: 1.2rem;
+    font-weight: 600;
+    visibility: hidden;
+  }
+
+  .form__input--error + .form__error {
+    visibility: visible;
+  }
+
+  .form__input--small {
+    max-width: 250px;
+  }
+
+  .form__btn {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 1.5rem 1.6rem;
+    margin: 10px 0;
+
+    width: 100%;
+    max-width: 42.5rem;
+
+    color: var(--white-color);
+    background: var(--dark-color);
+
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .form__btn:active {
+    background: var(--black-color);
+    color: var(--light-gray-color);
+  }
+}
